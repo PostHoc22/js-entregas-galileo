@@ -1,0 +1,30 @@
+//1- Crear una función que reciba un número por parámetro e indique en consola si el número es par o impar.
+
+const esPar = (numero) => {
+  if (numero % 2 === 0) return "es par";
+  else return "no es par, es impar";
+};
+console.log(esPar(2));
+console.log(esPar(3));
+
+//2- Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.
+
+const mayorOMenor = (num1, num2) => {
+  if (num1 > num2) return `${num1} es mayor que ${num2}`;
+  else if (num1 < num2) return `${num2} es mayor que ${num1}`;
+  else return `ambos numeros ingresados son iguales`;
+};
+console.log(mayorOMenor(10, 8));
+console.log(mayorOMenor(18, 22));
+console.log(mayorOMenor(5, 5));
+
+//3- Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5.
+
+const multiploDeCinco = (numero) => {
+  if (numero % 5 === 0) return `El numero ${numero} es multiplo de 5`;
+  else return "el valor ingresado no es multiplo de 5";
+};
+console.log(multiploDeCinco(15));
+console.log(multiploDeCinco(23));
+
+//4- Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.
